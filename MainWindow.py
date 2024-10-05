@@ -46,7 +46,6 @@ class MainWindow():
     textEntry01 = Texts(_window,ttk)
     textEntry02 = Texts(_window,ttk)
 
-    
     @classmethod
     def main(cls):
         
@@ -58,11 +57,11 @@ class MainWindow():
         cls.frameAreaText.frame('secondary',330,10,560,580)
         cls.frameGraphic01.frame('#303030',10,140,310,30)
 
-        # entrys 
+        # entrys
 
-        cls.fileName.entry('light',20,30,290,30)
-        cls.filePath.entry('light',20,95,290,30)
-
+        getName = cls.fileName.entry('light',20,30,290,30)
+        getPath = cls.filePath.entry('light',20,95,290,30)
+        
         # labels
 
         cls.label01.label('#303030',20,10,135,25,"Nome do Arquivo")
@@ -71,18 +70,20 @@ class MainWindow():
         cls.label04.label('#222222',85,142,100,25,"MarkDown")
         cls.label05.label('#303030',15,295,200,25,"Topicos Importantes")
         
+        # funcao teste
+
         # buttons
-
+        cls.envietButton.command(lambda:print(getName.get(),getPath.get(),getText1.get("1.0","end-1c"),getBoolean.get()))
         cls.envietButton.buttonOutline('success',60,200,200,50,"Envie")
-
+        
         # checkbutton
-
-        cls.roundToggle.rounded('light',50,145,100,100)
+        
+        getRounded,getBoolean = cls.roundToggle.rounded('light',50,145,100,100)
 
         # text
 
-        cls.textEntry01.text(15,320,300,265)
-        cls.textEntry02.text(340,20,540,560)
+        getText1 = cls.textEntry01.text(15,320,300,265)
+        getText2 = cls.textEntry02.text(340,20,540,560)
 
         cls._window.mainloop()
 

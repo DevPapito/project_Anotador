@@ -10,3 +10,4 @@ class Framer():
         self.__frame = self.__instanceTTK.Frame(self.__instanceWindow,bootstyle=color)
         self.__frame.place(x=positionX,y=positionY,height=height,width=width)
     
+    
