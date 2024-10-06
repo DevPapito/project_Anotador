@@ -1,14 +1,15 @@
 from ttkbootstrap.constants import *
 import ttkbootstrap as ttk
 
-from WindowStyle import WindowStyle
-from Framer import Framer
-from Inputs import Inputs
-from Label import Label
-from Button import Button
-from Texts import Texts
-from DataTratament import DataTratament
-from CreateData import CreateData
+from packageGrafic.Label import Label
+from packageGrafic.WindowStyle import  WindowStyle
+from packageGrafic.Framer import Framer
+from packageGrafic.Inputs import Inputs
+from packageGrafic.Button import Button
+from packageGrafic.Texts import Texts
+
+from packageBackEnd.DataTratament import DataTratament
+from packageBackEnd.CreateData import CreateData
 
 class MainWindow():
 

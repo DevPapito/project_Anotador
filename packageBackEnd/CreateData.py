@@ -1,12 +1,18 @@
+from .Checker import Checker
+
 class CreateData():
+
+    checke = Checker()
 
     @classmethod
     def createFile(cls,filePath:str,fileName:str,modeFile:bool,text1:str,text2:str):
 
+        cls.checke.chacked(filePath=filePath,fileName=fileName)
+
         try:
 
             completePath = (f'{filePath}{fileName}')
-        
+
             if (modeFile):
 
                 completePath = (f'{completePath}.md')
@@ -16,10 +22,14 @@ class CreateData():
 
                 completePath = (f'{completePath}.html')
                 cls.fileWrite(completePath,text1,text2)
+            
+            print('Arquivo criado')
         
-        except Exception:
+        except FileNotFoundError:
         
-            print(Exception)
+            raise NotImplementedError('Diretorio ou arquivo nao existentes')
+
+    # types structures files 
 
     @classmethod
     def fileWrite(cls,filer:str,text1:str,text2:str):
