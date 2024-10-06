@@ -5,7 +5,7 @@ class DataTratament():
         return data.strip()
 
     def forPathsFormater(self,dataPath:str):
-
+        
         newData = dataPath.replace('\\','\\\\')
 
         return newData

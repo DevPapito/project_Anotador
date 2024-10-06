@@ -8,6 +8,7 @@ from Label import Label
 from Button import Button
 from Texts import Texts
 from DataTratament import DataTratament
+from CreateData import CreateData
 
 class MainWindow():
 
@@ -88,11 +89,17 @@ class MainWindow():
         
         # button/function
 
-        cls.envietButton.command(lambda:print(
-        dataTratament.forPathsFormater(getPath.get())))
-        
-        cls.envietButton.buttonOutline('success',60,200,200,50,"Envie")
+        # path
 
+        creater = CreateData(dataTratament.forPathsFormater(dataTratament.noSpacer(getPath.get())),
+                             dataTratament.noSpacer(getName.get()),
+                             getBoolean.get(),
+                             getText1.get("1.0","end-1c"),
+                             getText2.get("1.0","end-1c"))
+                
+        cls.envietButton.command(lambda:creater.createFile())
+
+        cls.envietButton.buttonOutline('success',60,200,200,50,"Envie")
 
         cls._window.mainloop()
 
