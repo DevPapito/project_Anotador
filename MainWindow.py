@@ -7,6 +7,7 @@ from Inputs import Inputs
 from Label import Label
 from Button import Button
 from Texts import Texts
+from DataTratament import DataTratament
 
 class MainWindow():
 
@@ -48,6 +49,8 @@ class MainWindow():
 
     @classmethod
     def main(cls):
+
+        # FRONT-END
         
         cls._windowStyle.style('Anotador','900x600')
 
@@ -69,13 +72,7 @@ class MainWindow():
         cls.label03.label('#222222',10,142,50,25,"Html")
         cls.label04.label('#222222',85,142,100,25,"MarkDown")
         cls.label05.label('#303030',15,295,200,25,"Topicos Importantes")
-        
-        # funcao teste
 
-        # buttons
-        cls.envietButton.command(lambda:print(getName.get(),getPath.get(),getText1.get("1.0","end-1c"),getBoolean.get()))
-        cls.envietButton.buttonOutline('success',60,200,200,50,"Envie")
-        
         # checkbutton
         
         getRounded,getBoolean = cls.roundToggle.rounded('light',50,145,100,100)
@@ -84,6 +81,18 @@ class MainWindow():
 
         getText1 = cls.textEntry01.text(15,320,300,265)
         getText2 = cls.textEntry02.text(340,20,540,560)
+
+        # BACK-END
+
+        dataTratament = DataTratament()
+        
+        # button/function
+
+        cls.envietButton.command(lambda:print(
+        dataTratament.forPathsFormater(getPath.get())))
+        
+        cls.envietButton.buttonOutline('success',60,200,200,50,"Envie")
+
 
         cls._window.mainloop()
 
