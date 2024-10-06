@@ -1,40 +1,30 @@
-import os
-
 class CreateData():
-    def __init__(self,filePath:str,fileName:str,modeFile:bool,text1:str,text2:str):
 
-        self.__filePath = filePath
-        self.__fileName = fileName
-        self.__modeFile = modeFile
-        self.__text1 = text1
-        self.__text2 = text2
-    
-    def createFile(self):
+    @classmethod
+    def createFile(cls,filePath:str,fileName:str,modeFile:bool,text1:str,text2:str):
 
-        try:    
+        try:
 
-            completePath = (f'{self.__filePath}{self.__fileName}')
-
-            if (self.__modeFile):
-
-                completePath + '.md'
-
-                self.fileWrite(completePath)
-            
-            elif (not self.__modeFile):
-
-                completePath + '.html'
-
-                self.fileWrite(completePath)
-
-        except Exception:
-
-            print(Exception)
+            completePath = (f'{filePath}{fileName}')
         
-    def fileWrite(self,file:str):
+            if (modeFile):
 
-        with open(file,'w') as fw:
+                completePath = (f'{completePath}.md')
+                cls.fileWrite(completePath,text1,text2)
+        
+            else:
 
-            fw.write(self.__text1)
-            fw.write(self.__text2)
-    
+                completePath = (f'{completePath}.html')
+                cls.fileWrite(completePath,text1,text2)
+        
+        except Exception:
+        
+            print(Exception)
+
+    @classmethod
+    def fileWrite(cls,filer:str,text1:str,text2:str):
+            
+            with open(filer,'w') as fw:
+                 
+                 fw.write(f'{text2}\n')
+                 fw.write(text1)

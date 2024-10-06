@@ -15,27 +15,17 @@ class MainWindow():
     _window = ttk.Window(themename='darkly')
     _windowStyle = WindowStyle(_window,ttk)
 
-    # frames
-
     frameScapeButtons = Framer(_window,ttk)
     frameAreaText = Framer(_window,ttk)
 
     frameGraphic01 = Framer(_window,ttk)
 
-    # inputs
-
     fileName = Inputs(_window,ttk)
     filePath = Inputs(_window,ttk)
 
-    # checkbutton
-
     roundToggle = Inputs(_window,ttk)
 
-    # button
-
     envietButton = Button(_window,ttk)
-
-    # labels
 
     label01 = Label(_window,ttk)
     label02 = Label(_window,ttk)
@@ -43,15 +33,13 @@ class MainWindow():
     label04 = Label(_window,ttk)
     label05 = Label(_window,ttk)
     
-    # text
-
     textEntry01 = Texts(_window,ttk)
     textEntry02 = Texts(_window,ttk)
 
     @classmethod
     def main(cls):
 
-        # FRONT-END
+        # FRONT-END -------------------------------
         
         cls._windowStyle.style('Anotador','900x600')
 
@@ -78,26 +66,22 @@ class MainWindow():
         
         getRounded,getBoolean = cls.roundToggle.rounded('light',50,145,100,100)
 
-        # text
+        # textEntrys
 
         getText1 = cls.textEntry01.text(15,320,300,265)
         getText2 = cls.textEntry02.text(340,20,540,560)
 
-        # BACK-END
+        # BACK-END --------------------------------
 
         dataTratament = DataTratament()
         
         # button/function
 
-        # path
-
-        creater = CreateData(dataTratament.forPathsFormater(dataTratament.noSpacer(getPath.get())),
-                             dataTratament.noSpacer(getName.get()),
-                             getBoolean.get(),
-                             getText1.get("1.0","end-1c"),
-                             getText2.get("1.0","end-1c"))
-                
-        cls.envietButton.command(lambda:creater.createFile())
+        cls.envietButton.command(lambda:CreateData.createFile(filePath=dataTratament.forPathsFormater(dataTratament.noSpacer(getPath.get())),
+                                                              fileName=dataTratament.forPathsFormater(dataTratament.noSpacer(getName.get())),
+                                                              modeFile=getBoolean.get(),
+                                                              text1=getText1.get("1.0","end-1c"),
+                                                              text2=getText2.get("1.0","end-1c")))
 
         cls.envietButton.buttonOutline('success',60,200,200,50,"Envie")
 
