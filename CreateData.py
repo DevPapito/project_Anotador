@@ -26,5 +26,37 @@ class CreateData():
             
             with open(filer,'w') as fw:
                  
-                 fw.write(f'{text2}\n')
-                 fw.write(text1)
+                 if ('.md' in filer):
+                 
+                    fw.write(cls.mdScruture(text1,text2))
+
+                 else:
+                      
+                    fw.write(cls.htmlScruture(text1,text2))
+
+
+    # types scructures files
+
+    @classmethod
+    def mdScruture(cls,text1:str,text2:str):
+         
+         STRUCTURE = f"""# Firts Topics
+_________
+{text2}
+_________
+Off Topics
+{text1}"""
+
+         return STRUCTURE
+    
+    @classmethod
+    def htmlScruture(cls,text1:str,text2:str):
+         
+         STRUCTURE = f"""<h1>Firts Topcis</h1>
+<p>-------------</p>
+{text2}
+<p>-------------</p>
+<h2>Off Topics</h2>
+{text1}"""
+         
+         return STRUCTURE
