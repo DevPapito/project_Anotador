@@ -50,11 +50,11 @@ class CreateData():
     @classmethod
     def mdScruture(cls,text1:str,text2:str):
          
-         STRUCTURE = f"""# Firts Topics
+         STRUCTURE = f"""# MAIN TOPICS
 _________
 {text2}
 _________
-Off Topics
+OFF TOPICS
 {text1}"""
 
          return STRUCTURE
@@ -62,11 +62,11 @@ Off Topics
     @classmethod
     def htmlScruture(cls,text1:str,text2:str):
          
-         STRUCTURE = f"""<h1>Firts Topcis</h1>
-<p>-------------</p>
+         STRUCTURE = f"""<h1>MAIN TOPICS</h1>
+<p>_____________</p>
 {text2}
-<p>-------------</p>
-<h2>Off Topics</h2>
+<p>_____________</p>
+<h2>OFF TOPICS</h2>
 {text1}"""
          
          return STRUCTURE
