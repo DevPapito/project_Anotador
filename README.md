@@ -17,11 +17,7 @@ ____
 
 <!--- SCRIPT --->
 <p>
-Esse é um projeto que desenvolvi para aprendizado de conexão com MySQL em Python, tratamento de dados e formulario back-end. 
-  
-No projeto é possivel adicionar dados nos campos (Nome, Email e Sobre), inspirado em informações de uma entrevista de emprego ou algo semelhante.
-
-Também comportanto um arquivo de banco de dados (formularioData.sql) e arquivos do website inspirado nesse programa em Html e Css (index.html e style_formulario.css), o mesmo possui outros arquivos python(pacotes) criados por mim com o objetivo conexão do banco MySQL e tratamento de Strings(conjuto de caracteres do usuário).
+O projeto em questão surgiu da necessidade de criar uma aplicação de anotação mais rápida e eficiente em comparação às que eu utilizava, como o Notepad ou VSCode. Com acessos diretos à raiz de pastas e composto apenas por um botão de atualização, a velocidade nas anotações se torna notável. Além disso, a aplicação oferece dois formatos de arquivo: '.html' e '.markdown'. Essa escolha se deve à minha preferência pessoal por esses formatos, em vez de um simples '.txt'.
 </p>
 
 <!--- TITLE --->
@@ -31,7 +27,8 @@ Também comportanto um arquivo de banco de dados (formularioData.sql) e arquivos
 <ul>
   
 <li>Python</li>
-<li>Html e Css</li>
+<li>TTKBOOTSTRAP</li>
+<li>OS</li>
 
 </ul>
 
@@ -39,33 +36,32 @@ Também comportanto um arquivo de banco de dados (formularioData.sql) e arquivos
 <h2>Pontos Principais Do Projeto</h2>
 
 <!--- SCRIPT --->
-<p>O campo foi criado em base de um design utilizando da ferramente Figma, a principal biblioteca em uso é a do python(Tkinter), uma biblioteca gráfica simples, antiga porém foi perfeita para o projeto.
+<p>A camada de front-end foi totalmente construída utilizando a biblioteca TTKBootstrap, com uma janela fixa de 900 x 600 pixels para melhor centralização dos elementos visuais.
 </p>
 
 <!--- GIF CAMPE 02 --->
-<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdDJ2ZGQ3Y3k5N2t6OXlmZHRwZXZkZHA0emliMWFtaG1wNDA5YTd5NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/GNQt9gNJegfQ2ldBsc/giphy.gif">
+<img src="">
 
 <!--- SCRIPT --->
-<p>A janela é otimizada para o minimo em 500px de largura e 768px de altura, para o máximo 1366px de largura e 768px de altura, dada essa resolução máxima por ser da minha maquina pessoal.
+<p>Para a criação das anotações, deve-se adicionar o nome do arquivo e o caminho do diretório até o local onde a anotação estará armazenada. Além disso, é necessário adicionar uma barra invertida (\) ao final do caminho para que ele se torne válido. Esse processo está sujeito a mudanças futuras se caso ouver necessidade
 </p>
 
 <!--- GIF CAMPE 03 --->
-<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXVrcDI2aDhpbXkzb2FiMWhwMTV6YmRpMWdyZ3k1N29jaG55enZkdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ENxszo97fY5DJ1FVuy/giphy.gif">
+<img src="">
 
 <!--- SCRIPT --->
-<p>Além de direcionar ao banco de dados, no terminal da operação é possivel receber as informações já processadas no mesmo momento de envio via terminal</p>
+<p>O projeto possui dois campos: um campo maior de texto, destinado a formatar os itens como MAINTOPICS, e um campo menor de texto, que será utilizado para os OFFTOPICS.
+</p>
 
 <!--- GIF CAMPE 04 --->
-<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExam5wd3YzZzY5OXFxYWE4anphbG5kbXU4eHoxMncyaWE5bjl4OXB1bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jI33Ij1TZFA8t7uuCL/giphy.gif">
+<img src="">
 
 <!--- SCRIPT --->
-<p>O site comporta das resoluções 1366px de largura e 768px de altura para cima.
-  
-Seus botões são funcionais e possuindo de 4 botões para hyperLink e 1 em tag de botão para envio de formulário ou confirmação.
+<p>
 </p>
 
 <!--- GIF CAMPE 05 --->
-<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExemFxODJuZXN5MmtqaTJhMmF3dzh6MWVlY21vemxtNW94NTFsa3NnNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Y1EYm70yjBbxhH7EyL/giphy.gif">
+<img src="">
 
 <!--- TITLE --->
 <h2>Disponibilidade De Uso</h2>
