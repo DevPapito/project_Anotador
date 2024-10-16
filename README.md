@@ -8,7 +8,7 @@
 <!--- To convert the gif in URL used the GIPHY website -->
 
 <!--- GIF CAMPE 01 --->
-<img src="" width="600px">
+<img src="https://media.giphy.com/media/ayjEzv7a9iiX1YSOl2/giphy.gif" width="400px">
 <br>
 
 ____
@@ -40,28 +40,21 @@ O projeto em questão surgiu da necessidade de criar uma aplicação de anotaç�
 </p>
 
 <!--- GIF CAMPE 02 --->
-<img src="">
+<img src="https://media.giphy.com/media/JuzupZygaTOkP2PqI4/giphy.gif">
 
 <!--- SCRIPT --->
 <p>Para a criação das anotações, deve-se adicionar o nome do arquivo e o caminho do diretório até o local onde a anotação estará armazenada. Além disso, é necessário adicionar uma barra invertida (\) ao final do caminho para que ele se torne válido. Esse processo está sujeito a mudanças futuras se caso ouver necessidade
 </p>
 
 <!--- GIF CAMPE 03 --->
-<img src="">
+<img src="https://media.giphy.com/media/1E3CKFgjEBUKABpaPn/giphy.gif">
 
 <!--- SCRIPT --->
-<p>O projeto possui dois campos: um campo maior de texto, destinado a formatar os itens como MAINTOPICS, e um campo menor de texto, que será utilizado para os OFFTOPICS.
+<p>O projeto possui dois campos: um campo maior de texto, destinado a formatar os itens como MAINTOPICS, e um campo menor de texto, que será utilizado para os OFFTOPICS. O arquivo será automaticamente formado com base nessas estruturas.
 </p>
 
 <!--- GIF CAMPE 04 --->
-<img src="">
-
-<!--- SCRIPT --->
-<p>
-</p>
-
-<!--- GIF CAMPE 05 --->
-<img src="">
+<img src="https://media.giphy.com/media/tomfHcYzSDcgykPrIt/giphy.gif">
 
 <!--- TITLE --->
 <h2>Disponibilidade De Uso</h2>
